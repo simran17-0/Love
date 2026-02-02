@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Our Love 💖</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="hearts"></div>
+
+<div class="container">
+
+  <!-- INTRO -->
+  <div class="card active" id="card0">
+    <h1>Hey You 💕</h1>
+    <p>This isn’t just a website.<br>It’s my feelings… in colors.</p>
+    <button onclick="nextCard()">Start 💌</button>
+  </div>
+
+  <!-- QUESTION 1 -->
+  <div class="card" id="card1">
+    <h2>How do you like being loved? 💖</h2>
+    <p>Pick one:</p>
+    <button onclick="nextCard()">💬 Talking</button>
+    <button onclick="nextCard()">🤍 Small gestures</button>
+    <button onclick="nextCard()">🫂 Closeness</button>
+    <div class="gift" onclick="showGift('gift1')">🎁</div>
+    <div id="gift1" class="gift-popup">A little virtual hug for you 💌</div>
+  </div>
+
+  <!-- QUESTION 2 -->
+  <div class="card" id="card2">
+    <h2>What makes you happiest with me? 🌈</h2>
+    <button onclick="nextCard()">My care 💖</button>
+    <button onclick="nextCard()">Our talks 🌙</button>
+    <button onclick="nextCard()">Just… us ✨</button>
+    <div class="gift" onclick="showGift('gift2')">🎁</div>
+    <div id="gift2" class="gift-popup">A surprise kiss 😘</div>
+  </div>
+
+  <!-- QUESTION 3 -->
+  <div class="card" id="card3">
+    <h2>Our perfect moment together? 🏡</h2>
+    <button onclick="nextCard()">Late night talks 🌌</button>
+    <button onclick="nextCard()">Traveling ✈️</button>
+    <button onclick="nextCard()">Quiet together 🏡</button>
+    <div class="gift" onclick="showGift('gift3')">🎁</div>
+    <div id="gift3" class="gift-popup">A cuddle on the couch 💕</div>
+  </div>
+
+  <!-- FINAL PROPOSAL -->
+  <div class="card" id="card4">
+    <h1>So… 💖</h1>
+    <p>
+      I don’t want perfect days.<br>
+      I want *real* days.<br>
+      With you.
+    </p>
+
+    <h2>Will you be my Valentine? 💘</h2>
+
+    <div class="proposal-buttons">
+      <button class="yes" onclick="yesAnswer()">YES 💕</button>
+      <button class="no" onmouseover="moveNo()">No 🙈</button>
+    </div>
+  </div>
+
+  <!-- YES SCREEN -->
+  <div class="card" id="card5">
+    <h1>YAYYYY 💃💖</h1>
+    <p>You just made my heart smile.<br>This is just the beginning… 🌷</p>
+    <div id="heart-explosion"></div>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
